@@ -1,5 +1,5 @@
 @import "normalize.css";
-body, div, span {
+body, div, span, section, nav {
   box-sizing: border-box;
   position: relative;
 
@@ -15,9 +15,75 @@ body, div, span {
 }
 body, html {
   width: 100%;
-  height: 100%;
+}
+body {
+  background-color: #1F1E34;
+  color: #FFF;
+  font-family: "Avenir Next",
+      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+      Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
 }
 
-body {
+h1 {
+  font-size: 64px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  font-weight: 400;
+  color: #FFF;
+}
+
+a:hover {
+  font-weight: 400;
+  color: #DADADA;
+  text-decoration: none;
+}
+section {
+  /*background-color: rgba(255,0,0,0.3);*/
+  border: 2px solid #FFF;
+  width: 100vw;
+  height: 100vh;
+}
+nav {
+  flex-direction: row;
+}
+nav a {
+  padding: 0 20px;
+}
+.section1, .section4  {
+  align-items: center;
+  justify-content: center;
+}
+.section2, .section3 {
+  flex-direction: row;
+}
+.iphone-demo {
+  /*align-self: baseline;*/
+  /*align-items:strecth;*/
+  flex-grow: 1;
   background-color: rgba(255,0,0,0.3);
+  flex-basis: 0;
+}
+.feature-description {
+  /*align-self: flex-end;*/
+  flex-grow: 1;
+  align-items:strecth;
+  background-color: rgba(0,255,0,0.3);
+  flex-basis: 0;
+  justify-content:center;
+  padding: 0 20px;
+}
+.section3 .iphone-demo, .section3 .feature-description {
+  background: none;
 }
